@@ -1,0 +1,71 @@
+a{
+  color: #eb5e0b;
+}
+
+ul{
+
+}
+
+h5{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+hr{
+  background-color: #c5d7bd;
+  color: white;
+}
+
+.left-side-bar{
+  background-color: #1e212d;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.logo{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  padding: 2rem 2rem 2rem 2rem;
+  position: relative;
+  left: 2rem;
+}
+
+.footer{
+  color: #a0c1b8;
+  font-size: 1rem;
+  padding: 5rem 3rem 2rem 3rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.content{
+  font-size: 1.5rem;
+  margin: 5rem 2rem;
+}
+
+.login-form-title{
+  text-align: center;
+}
+
+.login-form{
+  color: #383e56;
+}
+
+.btn-login{
+  align-self: center;
+  background-color: #98ded9;
+}
+
+.forget-password{
+  color: #11698e;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.modal-header{
+  text-align: center;
+  background-color: #98ded9;
+  font-size: 1.5rem;
+}
