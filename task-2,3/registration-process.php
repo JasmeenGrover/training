@@ -7,13 +7,13 @@ $email=$_GET["email"];
 $gender=$_GET["gender"];
 $department=$_GET["department"];
 $course=$_GET["course"];
-// $pic=$_FILES["pic"]["name"];
-// $tmpName=$_FILES["pic"]["tmp_Name"];
-// move_uploaded_file($tmpName,"upload/".$pic);
+$pic=$_FILES["pic"]["name"];
+$tmpName=$_FILES["pic"]["tmp_Name"];
+move_uploaded_file($tmpName,"upload/".$pic);
 $skills=$_GET["skills"];
 $hobbies=$_GET["hobbies"];
 print_r($_GET);
-$query="INSERT INTO registration('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies') VALUES('$name','$studentid','$mobile','$email','$gender','$department','$course','fgkjldf','$skills','$hobbies')";
+$query="INSERT INTO registration('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies') VALUES('$name','$studentid','$mobile','$email','$gender','$department','$course','$pic','$skills','$hobbies')";
 print_r($query);
 mysqli_query($dbcon,$query);
 
