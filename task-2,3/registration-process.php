@@ -1,5 +1,9 @@
 <?php
 include_once("connection.php");
+echo "<pre>";
+
+print_r($_POST);
+exit();
 $name=$_GET["name"];
 $studentid=$_GET["studentid"];
 $mobile=$_GET["mobile"];
@@ -12,7 +16,7 @@ $tmpName=$_FILES["pic"]["tmp_Name"];
 move_uploaded_file($tmpName,"upload/".$pic);
 $skills=$_GET["skills"];
 $hobbies=$_GET["hobbies"];
-print_r($_GET);
+// print_r($_GET);
 $query="INSERT INTO registration('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies') VALUES('$name','$studentid','$mobile','$email','$gender','$department','$course','$pic','$skills','$hobbies')";
 print_r($query);
 mysqli_query($dbcon,$query);
