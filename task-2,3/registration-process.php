@@ -20,7 +20,7 @@ $course=$_POST["txtCourse"];
 $pic=$_FILES["txtPic"]["name"];
 $tmpName=$_FILES["txtPic"]["tmp_Name"];
 move_uploaded_file($tmpName,"upload/".$pic);
-$skills=$_POST["txtSkills"];
+$skills=$_POST["txtTech"];
 $hobbies=$_POST["txtHobbies"];
 // print_r($_GET);
 $query="INSERT INTO registration('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies') VALUES('$name','$studentid','$mobile','$email','$gender','$department','$course','$pic','$skills','$hobbies')";
