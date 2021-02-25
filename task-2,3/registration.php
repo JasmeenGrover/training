@@ -14,7 +14,7 @@
 </div>
 
 <div class="container center col-lg-5 mt-5">
-  <form class="form-background shadow" action="" method="Post" enctype="multipart/form-data">
+  <form class="form-background shadow" action="registration-process.php" method="Post" enctype="multipart/form-data">
     <div class="form-row pt-2">
       <div class="col-lg-5 pl-5">
         <label for="txtName">Name</label>
