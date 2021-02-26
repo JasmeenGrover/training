@@ -52,7 +52,7 @@
         <label for="txtGender">Gender</label>
       </div>
       <div class="col-lg-5">
-          <input type="radio" id="txtMale" name="txtGender" value="Male"> Male <br>
+          <input type="radio" id="txtMale" name="txtGender" value="Male" checked> Male <br>
           <input type="radio" id="txtFemale" name="txtGender" value="Female"> Female
       </div>
     </div>
@@ -69,7 +69,7 @@
         <label for="txtCourse">Select Courses</label>
       </div>
       <div class="col-lg-5">
-        <input type="checkbox" id="txtCourse" name="txtCourse[]" value="abcd"> abcd <br>
+        <input type="checkbox" id="txtCourse" name="txtCourse[]" value="abcd" checked> abcd <br>
         <input type="checkbox" id="" name="txtCourse[]" value="abcde"> abcd <br>
         <input type="checkbox" id="" name="txtCourse[]" value="abcd"> abcd <br>
         <input type="checkbox" id="" name="txtCourse[]" value="abcd"> abcd <br>
