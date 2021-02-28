@@ -23,7 +23,7 @@ move_uploaded_file($tmpName,"upload/".$pic);
 $skills=$_POST["txtTech"];
 $hobbies=$_POST["txtHobbies"];
 // print_r($_GET);
-$query="INSERT INTO registration('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies') VALUES ('$name','$studentid','$mobile','$email','$gender','$department','$course','$pic','$skills','$hobbies')";
+// $query="INSERT INTO registration('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies') VALUES ('$name','$studentid','$mobile','$email','$gender','$department','$course','$pic','$skills','$hobbies')";
 
 print_r($query);
 
