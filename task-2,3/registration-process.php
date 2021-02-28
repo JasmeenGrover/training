@@ -17,20 +17,25 @@ $gender=$_POST["txtGender"];
 // var txtGender = $("#txtFemale").val();
 $department=$_POST["txtDepartment"];
 $course=$_POST["txtCourse"];
+// $course = array('course');
+$course = implode(",", $course);
+echo $course;
 $pic=$_FILES["txtPic"]["name"];
 $tmpName=$_FILES["txtPic"]["tmp_Name"];
 move_uploaded_file($tmpName,"upload/".$pic);
 $skills=$_POST["txtTech"];
 $hobbies=$_POST["txtHobbies"];
 // print_r($_GET);
-// $query="INSERT INTO registration('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies') VALUES ('$name','$studentid','$mobile','$email','$gender','$department','$course','$pic','$skills','$hobbies')";
-
+$query="INSERT INTO registration ('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies') VALUES ('$name','$studentid','$mobile','$email','$gender','$department','$course','$pic','$skills','$hobbies')";
+echo $query;
 print_r($query);
 
-$query = array('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies');
-$comma_separated = implode(",", $query);
+print_r($FILES);
 
-echo $comma_separated;
+// $query = array('name','studentid','mobile','email','gender','department','course','pic','skills','hobbies');
+// $comma_separated = implode(",", $query);
+
+// echo $comma_separated;
 
 mysqli_query($dbcon,$query);
 
