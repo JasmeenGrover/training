@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>student registration form</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/registration.css">
 
 
@@ -114,8 +114,17 @@
       </div>
     </div>
     <div class="form-row pt-2">
-      <div class="col-lg-10 pl-5 pb-2 pt-5 btn-submit">
+      <!-- <div class="col-lg-10 pl-5 pb-2 pt-5 btn-submit">
         <input type="submit" name="btn" id="btnSubmit" value="Submit" class="btn btn-light btn-outline-dark">
+      </div> -->
+      <div class="col-lg-4 btn-submit mt-2">
+        <input type="submit" name="btn" id="btnSubmit" value="Submit" class="btn btn-light btn-outline-dark">
+      </div>
+      <div class="col-lg-4 btn-submit mt-2">
+        <input type="submit" name="btn" id="btnDelete" value="Delete" class="btn btn-light btn-outline-dark">
+      </div>
+      <div class="col-lg-4 btn-submit mt-2">
+        <input type="submit" name="btn" value="Update" class="btn btn-light btn-outline-dark">
       </div>
     </div>
   </form>
