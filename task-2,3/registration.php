@@ -93,15 +93,15 @@
         <select class="text-field" id="txtTech" name="txtTech">
           <option value="">Choose........</option>
           <option value="Full Stack Web Development">Full Stack Web Development</option>
-          <option value="">Android</option>
+          <option value="Android">Android</option>
           <option value="">Swift(IOS Developer)</option>
-          <option value="">JAVA</option>
-          <option value="">Flutter</option>
-          <option value="">C/C++</option>
-          <option value="">Python</option>
-          <option value="">SAP</option>
-          <option value="">Data Science</option>
-          <option value="">Others.....</option>
+          <option>JAVA</option>
+          <option>Flutter</option>
+          <option>C/C++</option>
+          <option>Python</option>
+          <option>SAP</option>
+          <option>Data Science</option>
+          <option>Others.....</option>
         </select>
       </div>
     </div>
@@ -117,14 +117,26 @@
       <!-- <div class="col-lg-10 pl-5 pb-2 pt-5 btn-submit">
         <input type="submit" name="btn" id="btnSubmit" value="Submit" class="btn btn-light btn-outline-dark">
       </div> -->
-      <div class="col-lg-4 btn-submit mt-2">
+      <!-- <div class="col-lg-4 btn-submit mt-2">
+        <input type="submit" name="btn" id="btnSubmit" value="Submit" class="btn btn-light btn-outline-dark">
+      </div> -->
+      <div class="col-lg-3 btn-submit mt-2">
         <input type="submit" name="btn" id="btnSubmit" value="Submit" class="btn btn-light btn-outline-dark">
       </div>
-      <div class="col-lg-4 btn-submit mt-2">
+      <!-- <div class="col-lg-4 btn-submit mt-2">
         <input type="submit" name="btn" id="btnDelete" value="Delete" class="btn btn-light btn-outline-dark">
-      </div>
-      <div class="col-lg-4 btn-submit mt-2">
+      </div> -->
+      <div class="col-lg-3 btn-submit mt-2">
+       <input type="submit" name="btn" id="btnDelete" value="Delete" class="btn btn-light btn-outline-dark">
+     </div>
+      <!-- <div class="col-lg-4 btn-submit mt-2">
         <input type="submit" name="btn" value="Update" class="btn btn-light btn-outline-dark">
+      </div> -->
+      <div class="col-lg-3 btn-submit mt-2">
+        <input type="submit" name="btn" value="Update" class="btn btn-light btn-outline-dark">
+      </div>
+      <div class="col-lg-3 btn-submit mt-2">
+        <input type="submit" name="btn" value="Search" class="btn btn-light btn-outline-dark">
       </div>
     </div>
   </form>
