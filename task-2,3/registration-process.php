@@ -17,6 +17,10 @@ else {
   }
 }
 
+if ($btn == "Search") {
+  doSearch($dbcon);
+}
+
 echo "<pre>";
 
 print_r($_POST);
@@ -122,6 +126,10 @@ function doUpdate($dbcon){
   else {
     echo $msg;
   }
+}
+
+function doSearch($dbcon){
+  
 }
 
  ?>
