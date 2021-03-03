@@ -22,7 +22,15 @@ include_once("connection.php");
 
 
   mysqli_query($dbcon,$query);
+  
   $count=mysqli_affected_rows($dbcon);
-  echo $count."Delete";
+  
+  $msg=mysqli_error($dbcon);
+  echo "<br>";
+  if($msg){
+    echo $msg;
+  } else {
+    echo $count."Delete";
+  }
 // }
  ?>
