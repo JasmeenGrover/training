@@ -39,7 +39,7 @@
           <td><?php echo $row["name"]; ?> </td>
           <td><?php echo $row["mobile"]; ?> </td>
           <td class="text-center">
-            <a class='btn btn-info btn-xs' href="registration.php"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+            <a class='btn btn-info btn-xs' href="edit.php?id=<?php  echo $row["studentid"]; ?>"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
             <a href="list-process.php?id=<?php  echo $row["studentid"]; ?>" name="btn" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a>
           </td>
       </tr>

@@ -1,4 +1,5 @@
 <?php
+include_once "connection.php";
 function doDelete($dbcon){
   $name=$_POST["txtName"];
   $studentid=$_POST["txtId"];
@@ -23,5 +24,18 @@ function doDelete($dbcon){
   echo $count."Delete";
 }
 
-doDelete();
+function getStudent($studentid)
+{
+  global $dbcon;
+  $query = "select *  from registration where studentid = '$studentid'";
+  $response = mysqli_query($dbcon,$query);
+  $error = mysqli_error($dbcon);
+  if($error){
+    die($error);
+  } else {
+    return mysqli_fetch_assoc($response);
+  }
+}
+
+//doDelete();
  ?>
