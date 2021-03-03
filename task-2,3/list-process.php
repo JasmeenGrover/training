@@ -22,9 +22,9 @@ include_once("connection.php");
 
 
   mysqli_query($dbcon,$query);
-  
+
   $count=mysqli_affected_rows($dbcon);
-  
+
   $msg=mysqli_error($dbcon);
   echo "<br>";
   if($msg){
