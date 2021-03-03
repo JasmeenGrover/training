@@ -3,7 +3,7 @@ include_once("connection.php");
 
 // function doDelete($dbcon){
   // $name=$_POST["txtName"];
-  $studentid=$_POST["txtId"];
+  $studentid=$_GET["id"];
   // $mobile=$_POST["txtMobile"];
   // $email=$_POST["txtEmail"];
   // $gender=$_POST["txtGender"];
