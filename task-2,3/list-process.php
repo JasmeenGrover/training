@@ -3,7 +3,7 @@ include_once("connection.php");
 
 // function doDelete($dbcon){
   // $name=$_POST["txtName"];
-  $studentid=$_POST["studentid"];
+  $studentid=$_POST["txtId"];
   // $mobile=$_POST["txtMobile"];
   // $email=$_POST["txtEmail"];
   // $gender=$_POST["txtGender"];
@@ -17,7 +17,8 @@ include_once("connection.php");
   // $skills=$_POST["txtTech"];
   // $hobbies=$_POST["txtHobbies"];
 
-  $query = "delete from registration where studentid = 10'";
+  $query = "delete from registration where studentid = ''$studentid'";
+  echo $query;
 
 
   mysqli_query($dbcon,$query);
