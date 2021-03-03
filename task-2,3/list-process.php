@@ -17,7 +17,7 @@ include_once("connection.php");
   // $skills=$_POST["txtTech"];
   // $hobbies=$_POST["txtHobbies"];
 
-  $query = "delete from registration where studentid = ''$studentid'";
+  $query = "delete from registration where studentid = '$studentid'";
   echo $query;
 
 
