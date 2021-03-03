@@ -9,12 +9,34 @@
 
   </head>
   <body>
+
+
+
+    <?php
+    include_once("connection.php");
+    $result = mysqli_query($dbcon,"Select distinct studentid from registration");
+     ?>
+
+
 <div class="title-background shadow">
   <h2>Student Registration Form</h2>
 </div>
 
 <div class="container center col-lg-5 mt-5">
+
+  <?php
+  if (mysqli_num_rows($result) > 0) {
+    // code...
+   ?>
+
   <form class="form-background shadow" action="registration-process.php" method="Post" enctype="multipart/form-data">
+
+
+    <?php
+    $i=0;
+    while ($row = mysqli_fetch_array($result)) {
+      ?>
+
     <div class="form-row pt-2">
       <div class="col-lg-5 pl-5">
         <label for="txtName">Name</label>
@@ -28,7 +50,7 @@
         <label for="txtId">Student ID</label>
       </div>
       <div class="col-lg-5">
-        <input type="text" id="txtId" name="txtId" value="" class="text-field">
+        <input type="text" id="txtId" name="txtId" value="" class="text-field" disabled>
       </div>
     </div>
     <div class="form-row pt-2">
@@ -113,6 +135,16 @@
         <input type="text" id="txtHobbies" name="txtHobbies" value="" class="text-field">
       </div>
     </div>
+
+    ?>
+
+    <?php
+  }
+  else {
+    echo "No result found";
+  }
+     ?>
+     
     <div class="form-row pt-2">
       <!-- <div class="col-lg-10 pl-5 pb-2 pt-5 btn-submit">
         <input type="submit" name="btn" id="btnSubmit" value="Submit" class="btn btn-light btn-outline-dark">
