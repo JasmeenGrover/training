@@ -9,7 +9,7 @@
 
   </head>
   <body>
-    
+
 <div class="title-background shadow">
   <h2>Student Registration Form</h2>
 </div>
