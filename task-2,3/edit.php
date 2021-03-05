@@ -1,5 +1,5 @@
-<?php 
-include("functions.php"); 
+<?php
+include("functions.php");
 $id = $_GET['id'];
 if(!$id){
   header("location: list.php");
@@ -11,6 +11,15 @@ if(!$registration){
   return;
 }
 $name = $registration['name'];
+$studentid = $registration['studentid'];
+$mobile = $registration['mobile'];
+$email = $registration['email'];
+$gender = $registration['gender'];
+$department = $registration['department'];
+$course = $registration['course'];
+$pic = $registration['pic'];
+$skills = $registration['skills'];
+$hobbies = $registration['hobbies'];
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -23,7 +32,7 @@ $name = $registration['name'];
 
   </head>
   <body>
-    
+
 <div class="title-background shadow">
   <h2>Student Registration Form</h2>
 </div>
@@ -43,7 +52,7 @@ $name = $registration['name'];
         <label for="txtId">Student ID</label>
       </div>
       <div class="col-lg-5">
-        <input type="text" id="txtId" name="txtId" value="" class="text-field" disabled>
+        <input type="text" id="txtId" name="txtId" value="<?php echo $studentid; ?>" class="text-field" disabled>
       </div>
     </div>
     <div class="form-row pt-2">
@@ -51,7 +60,7 @@ $name = $registration['name'];
         <label for="txtMobile">Mobile</label>
       </div>
       <div class="col-lg-5">
-        <input type="text" id="txtMobile" name="txtMobile" value="" class="text-field">
+        <input type="text" id="txtMobile" name="txtMobile" value="<?php echo $mobile; ?>" class="text-field">
       </div>
     </div>
     <div class="form-row pt-2">
@@ -59,7 +68,7 @@ $name = $registration['name'];
         <label for="txtEmail">Email</label>
       </div>
       <div class="col-lg-5">
-        <input type="text" id="txtEmail" name="txtEmail" value="" class="text-field">
+        <input type="text" id="txtEmail" name="txtEmail" value="<?php echo $email; ?>" class="text-field">
       </div>
     </div>
     <div class="form-row pt-2">
@@ -76,7 +85,7 @@ $name = $registration['name'];
         <label for="txtDepartment">Faculty/Department</label>
       </div>
       <div class="col-lg-5">
-        <input type="text" id="txtDepartment" name="txtDepartment" value="" class="text-field">
+        <input type="text" id="txtDepartment" name="txtDepartment" value="<?php echo $department; ?>" class="text-field">
       </div>
     </div>
     <div class="form-row pt-2">
@@ -125,7 +134,7 @@ $name = $registration['name'];
         <label for="txtHobbies">Hobbies</label>
       </div>
       <div class="col-lg-5">
-        <input type="text" id="txtHobbies" name="txtHobbies" value="" class="text-field">
+        <input type="text" id="txtHobbies" name="txtHobbies" value="<?php echo $hobbies; ?>" class="text-field">
       </div>
     </div>
     <div class="form-row pt-2">
