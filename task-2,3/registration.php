@@ -1,3 +1,28 @@
+<?php
+include("functions.php");
+ //include, include_once, require , require_once;
+// $id = $_GET['id'];
+// if(!$id){
+//   header("location: list.php");
+//   return;
+// }
+// $registration = getStudent($_GET['id']);
+// if(!$registration){
+//   header("location: list.php");
+//   return;
+// }
+// $name = $registration['name'];
+// $studentid = $registration['studentid'];
+// $mobile = $registration['mobile'];
+// $email = $registration['email'];
+// $gender = $registration['gender'];
+// $department = $registration['department'];
+// $course = $registration['course'];
+// $pic = $registration['pic'];
+// echo $pic;
+// $skills = $registration['skills'];
+// $hobbies = $registration['hobbies'];
+// ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -96,13 +121,13 @@
           <option value="Full Stack Web Development">Full Stack Web Development</option>
           <option value="Android">Android</option>
           <option value="">Swift(IOS Developer)</option>
-          <option>JAVA</option>
-          <option>Flutter</option>
-          <option>C/C++</option>
-          <option>Python</option>
-          <option>SAP</option>
-          <option>Data Science</option>
-          <option>Others.....</option>
+          <option value="">JAVA</option>
+          <option value="">Flutter</option>
+          <option value="">C/C++</option>
+          <option value="">Python</option>
+          <option value="">SAP</option>
+          <option value="">Data Science</option>
+          <option value="">Others.....</option>
         </select>
       </div>
     </div>
