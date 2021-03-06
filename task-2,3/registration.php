@@ -1,4 +1,7 @@
 <?php
+session_start();
+ ?>
+<?php
 include("functions.php");
  //include, include_once, require , require_once;
 // $id = $_GET['id'];

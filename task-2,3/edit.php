@@ -106,7 +106,7 @@ $hobbies = $registration['hobbies'];
       </div>
       <div class="col-lg-5">
         <input type="file" onchange="showpreview(this);" id="txtPic" name="txtPic" value="">
-        <img src="images/logo.jpg" alt="" id="spic" width="100" height="100">
+        <img src="images/logo.jpg?studentid=2" alt="" id="spic" width="100" height="100">
       </div>
     </div>
     <div class="form-row pt-2">
