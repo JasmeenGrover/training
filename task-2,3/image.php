@@ -2,7 +2,7 @@
 
 include_once("connection.php");
 
-  $studentid = $_GET['studentid'];
+
   // do some validation here to ensure id is safe
 
   $link = mysql_connect("localhost", "root", "");
@@ -14,4 +14,7 @@ include_once("connection.php");
 
   header("Content-type: image/jpeg");
   echo $row['pic'];
+
+
+echo 'PHP version: ' . phpversion();
 ?>
