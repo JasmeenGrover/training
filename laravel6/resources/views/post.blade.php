@@ -6,7 +6,8 @@
   </head>
   <body>
 
-    <h1>God</h1>
+    <h1>Blog Post</h1>
+    <p>{{$post}}</p>
 
   </body>
 </html>
