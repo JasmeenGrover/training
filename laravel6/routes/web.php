@@ -28,5 +28,9 @@
 // });
 
 Route::get('/', function () {
-    return view('test');
+  $name = request('name');
+  // return $name;
+    return view('test',[
+      'name' => $name
+    ]);
 });
