@@ -5,7 +5,9 @@
     <title></title>
   </head>
   <body>
-    <h1><?= htmlspecialchars($name, ENT_QUOTES) ?></h1> // Referncing of variables in php
-    <h1>{{$name}}</h1> // Referncing of variable in Laravel
+    <!-- Referncing of variables in php -->
+    <h1><?= htmlspecialchars($name, ENT_QUOTES) ?></h1>
+    <!-- Referncing of variable in Laravel -->
+    <h1>{{$name}}</h1>
   </body>
 </html>
