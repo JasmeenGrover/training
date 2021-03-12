@@ -37,11 +37,11 @@
 
   Route::get('/posts/{post}',function($post){
     $posts = [
-       'my-post' => 'Hello, welcome to my blog'
+       'my-post' => 'Hello, welcome to my blog',
       'your-post' => 'Hello, i would love to be here.'
     ];
     // return $post;
     return view('post',[
-      'post' => $posts[$post];
+      'post' => $posts[$post]
     ]);
   });
