@@ -27,10 +27,19 @@
 //     return ['ary' => 'god'];
 // });
 
-Route::get('/', function () {
-  $name = request('name');
-  // return $name;
-    return view('test',[
-      'name' => $name
-    ]);
-});
+// Route::get('/', function () {
+//   $name = request('name');
+//   // return $name;
+//     return view('test',[
+//       'name' => $name
+//     ]);
+// });
+
+  Route::get('/posts/{post}',function($post){
+    $post = [
+       'my-post' => 'Hello, welcome to my blog'
+      'your-post' => 'Hello, i would love to be here.'
+    ];
+    // return $post;
+    return view('post');
+  });
