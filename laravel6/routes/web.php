@@ -11,6 +11,22 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+//
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
+//
+// Route::get('/', function () {
+//     return 'Hello';
+// });
+//
+// Route::get('/', function () {
+//     return ['ary' => 'god'];
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
 });
