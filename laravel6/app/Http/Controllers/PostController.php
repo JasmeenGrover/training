@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-  public function show($post)
+  public function show($slug)
   {
     // code...
     // return 'God';
