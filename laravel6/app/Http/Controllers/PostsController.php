@@ -4,9 +4,11 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class PostsController
 {
-  public function show($post)
+  public function show($posts)
   {
     // code...
     // return 'God';

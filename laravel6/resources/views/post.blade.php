@@ -7,7 +7,7 @@
   <body>
 
     <h1>Blog Post</h1>
-    <p>{{$post}}</p>
+    <p>{{$post->body}}</p>
 
   </body>
 </html>
