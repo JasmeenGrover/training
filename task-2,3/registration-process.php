@@ -27,7 +27,7 @@ print_r($_POST);
 // exit();
 function doSubmit($dbcon){
 $name=$_POST["txtName"];
-$studentid=$_POST["txtId"];
+$studentid=$_POST["txtId"]; //use isset
 $mobile=$_POST["txtMobile"];
 $email=$_POST["txtEmail"];
 $gender=$_POST["txtGender"];
@@ -129,7 +129,7 @@ function doUpdate($dbcon){
 }
 
 function doSearch($dbcon){
-  
+
 }
 
  ?>
