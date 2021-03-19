@@ -54,12 +54,18 @@
   // Route::get('/posts/{post}', 'PostsController@show');
   // Route::get('/posts/{post}', 'PostController@show');
 
-  Route::get('/', function () {
-      return view('welcome');
-  });
+  // Route::get('/', function () {
+  //     return view('welcome');
+  // });
+  //
+  // Route::get('/', function () {
+  //     return view('contact');
+  // });
 
   Route::get('/', function () {
-      return view('contact');
+      return view('welcometemplate');
   });
 
-  
+  Route::get('/about', function () {
+      return view('about');
+  });
