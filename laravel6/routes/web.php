@@ -52,4 +52,14 @@
   // });
 
   // Route::get('/posts/{post}', 'PostsController@show');
-  Route::get('/posts/{post}', 'PostController@show');
+  // Route::get('/posts/{post}', 'PostController@show');
+
+  Route::get('/', function () {
+      return view('welcome');
+  });
+
+  Route::get('/', function () {
+      return view('contact');
+  });
+
+  
