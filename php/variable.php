@@ -24,14 +24,6 @@
     echo $c;
      ?>
 
-     <?php
-     $var = "god";
 
-     function string(){
-       echo $var;
-     }
-
-     string();
-      ?>
   </body>
 </html>
