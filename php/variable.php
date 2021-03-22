@@ -24,6 +24,10 @@
     echo $c;
      ?>
 
+     <br>
+
+     <?php
+     $z=5;
 
   </body>
 </html>
