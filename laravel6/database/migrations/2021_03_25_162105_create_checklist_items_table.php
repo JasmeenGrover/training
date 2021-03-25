@@ -15,9 +15,9 @@ class CreateChecklistItemsTable extends Migration
     {
         Schema::create('checklist_items', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('type');
+            $table->String('type');
             $table->string('key');
-            $table->text('value');
+            $table->string('value');
             $table->softDeletes();
             $table->timestamps();
         });
