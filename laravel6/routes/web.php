@@ -62,10 +62,16 @@
   //     return view('contact');
   // });
 
+  // Route::get('/', function () {
+  //     return view('welcometemplate');
+  // });
+  //
+  // Route::get('/about', function () {
+  //     return view('about');
+  // });
+
   Route::get('/', function () {
-      return view('welcometemplate');
+      return view('checklist-item.index');
   });
 
-  Route::get('/about', function () {
-      return view('about');
-  });
+  Route::get('checklist-item', "ChecklistItemController@index");
