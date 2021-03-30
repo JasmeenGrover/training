@@ -67,8 +67,8 @@ class ChecklistItemController extends Controller
 
     public function destroy(ChecklistItems $checklistItem)
     {
-      $checklistItem -> delete();
-      return redirect() -> route('checklist-item.index')->with('success','Checklist Item deleted');
+      $checklistItem->delete();
+      return redirect()->route('checklist-item.index')->with('success','Checklist Item deleted');
     }
 
 
