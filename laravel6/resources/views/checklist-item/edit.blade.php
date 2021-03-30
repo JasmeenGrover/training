@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <form action="{{ route('checklist-item.update', $checklistItem->id) }}" method="GET">
+    <form action="{{ route('checklist-item.update', $checklistItem->id) }}" method="get">
       <div class="mb-3">
         <label for="" class="form-label">Id</label>
         <input type="" class="form-control" id="" disabled>
