@@ -62,25 +62,25 @@
   //     return view('contact');
   // });
 
-  // Route::get('/', function () {
-  //     return view('welcometemplate');
-  // });
-  //
-  // Route::get('/about', function () {
-  //     return view('about');
-  // });
-
   Route::get('/', function () {
-      return view('checklist-item.index');
+      return view('welcometemplate');
   });
+
+  Route::get('/about', function () {
+      return view('about');
+  });
+
+  // Route::get('/', function () {
+  //     return view('checklist-item.index');
+  // });
 
   // Route::get('checklist-item', "ChecklistItemController@index");
 
-  Route::get('/', function () {
-      return view('checklist-item.edit');
-  });
+  // Route::get('/', function () {
+  //     return view('checklist-item.edit');
+  // });
 
-Route::resource('checklist-item', 'ChecklistItemController');
+// Route::resource('checklist-item', 'ChecklistItemController');
 // Route::get('checklist-item/{checklist-item}/edit', "ChecklistItemController@edit");
 
 // Route::put('checklist-item/{checklist-item}/edit', 'ChecklistItemController@update');

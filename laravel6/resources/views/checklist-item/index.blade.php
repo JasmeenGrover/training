@@ -33,11 +33,11 @@
       <td>{{$item["key"]}}</td>
       <td>{{$item["value"]}}</td>
       <td>
+        <form class="" action="{{ route("checklist-item.destroy",$item)}}" method="post">
           <a type="button" class="btn btn-primary" href="{{route("checklist-item.edit",$item)}}">Edit</a>
-            <form class="" action="{{ route('checklist-item.destroy',$checklistItem->id)}}" method="post">
           @csrf
           @method('DELETE')
-          <button type="button" class="btn btn-danger">Delete</button></td>
+          <a type="button" class="btn btn-danger" href="">Delete</a></td>
         </form>
     </tr>
     @endforeach
