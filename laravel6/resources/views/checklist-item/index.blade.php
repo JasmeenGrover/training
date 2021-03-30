@@ -13,7 +13,7 @@
   <body>
     <h1>Hello, world!</h1>
 
-    <button type="button" class="btn btn-primary">Create Checklist Item</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checklistItem">Create Checklist Item</button>
 
     <table class="table">
   <thead>
@@ -32,7 +32,7 @@
       <td>{{$item["type"]}}</td>
       <td>{{$item["key"]}}</td>
       <td>{{$item["value"]}}</td>
-      <td><button type="button" class="btn btn-primary">Edit</button>
+      <td><a type="button" class="btn btn-primary" href="{{route("checklist-item.edit",$item)}}">Edit</a>
         <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
     @endforeach
@@ -40,6 +40,63 @@
   </tbody>
 </table>
 
+<!-- Modal -->
+
+<div class="modal fade" id="checklistItem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Checklist Item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3">
+    <label for="" class="form-label">Type</label>
+          <select id="" class="form-select">
+        <option>InCabinChecks</option>
+        <option>DrivingInfoQuestions</option>
+        <option>ExternalChecks</option>
+      </select>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Key</label>
+    <input type="" class="form-control" id="">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Value</label>
+    <input type="password" class="form-control" id="">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Modal -->
+
+<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Checklist Item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

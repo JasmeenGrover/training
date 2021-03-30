@@ -13,4 +13,22 @@ class ChecklistItemController extends Controller
         $checklistItems = ChecklistItems::paginate();
         return view("checklist-item.index",compact("checklistItems"));
     }
+
+    public function edit(ChecklistItems $checklistItem)
+    {
+        return view("checklist-item.edit", compact("checklistItem"));
+    }
+
+    public function update(Request $request, ChecklistItems $checklistItem)
+    {
+      $request -> validate([
+        'type' => 'required',
+        'key' => 'required',
+        'value' => 'required',
+      ]);
+      
+      $checklistItem ->update($request->all());
+
+      return redirect()->route('checklist-item.index');
+    }
 }
