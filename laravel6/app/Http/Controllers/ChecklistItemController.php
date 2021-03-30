@@ -26,9 +26,14 @@ class ChecklistItemController extends Controller
         'key' => 'required',
         'value' => 'required',
       ]);
-      
+
       $checklistItem ->update($request->all());
 
-      return redirect()->route('checklist-item.index');
+      return redirect()->route('checklist-item.index')->with('success','Product updated successfully');
+    }
+
+    public function show(ChecklistItems $checklistItem)
+    {
+      return view("checklist-item.show", compact("checklistItem"));
     }
 }
