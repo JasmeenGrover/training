@@ -8,6 +8,12 @@ use App\ChecklistItems;
 
 class ChecklistItemController extends Controller
 {
+
+  public function show(ChecklistItems $checklistItem)
+  {
+    return view("checklist-item.show", compact("checklistItem"));
+  }
+
     public function index()
     {
         $checklistItems = ChecklistItems::paginate();
@@ -29,11 +35,14 @@ class ChecklistItemController extends Controller
 
       $checklistItem ->update($request->all());
 
-      return redirect()->route('checklist-item.index')->with('success','Product updated successfully');
+      return redirect()->route('checklist-item.index')->with('success','ChecklistItem updated successfully');
     }
 
-    public function show(ChecklistItems $checklistItem)
+    public function destroy(ChecklistItems $checklistItem)
     {
-      return view("checklist-item.show", compact("checklistItem"));
+      $checklistItem -> delete();
+      return redirect() -> route('checklist-item.index')->with('success','Checklist Item deleted');
     }
+
+
 }

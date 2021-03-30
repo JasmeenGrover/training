@@ -83,4 +83,4 @@
 Route::resource('checklist-item', 'ChecklistItemController');
 // Route::get('checklist-item/{checklist-item}/edit', "ChecklistItemController@edit");
 
-Route::put('checklist-item/{checklist-item}/edit', 'ChecklistItemController@update');
+// Route::put('checklist-item/{checklist-item}/edit', 'ChecklistItemController@update');

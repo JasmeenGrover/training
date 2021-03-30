@@ -33,6 +33,8 @@
       <td>{{$item["key"]}}</td>
       <td>{{$item["value"]}}</td>
       <td><a type="button" class="btn btn-primary" href="{{route("checklist-item.edit",$item)}}">Edit</a>
+        @csrf
+        @method('DELETE')
         <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
     @endforeach
