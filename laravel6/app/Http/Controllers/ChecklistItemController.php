@@ -30,9 +30,9 @@ class ChecklistItemController extends Controller
         'value' => 'required',
       ]);
 
-      ChecklistItems::create($request->all());
+      ChecklistItems::create($request->all()); //doubt
 
-      return redirect()->route('checklist-tem.index')->with('success','Checklist Item created');
+      return redirect()->route('checklist-item.index')->with('success','Checklist Item created');
     }
 
     public function show(ChecklistItems $checklistItem)
