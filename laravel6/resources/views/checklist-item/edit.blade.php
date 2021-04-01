@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <form action="{{ route('checklist-item.update', $checklistItem->id) }}" method="get">
+
+    <form action="{{ route('checklist-item.update', $checklistItem->id) }}" method="Post">
+
+      @csrf
+      @method('PUT')
+
       <div class="mb-3">
-        <label for="" class="form-label">Id</label>
-        <input type="" class="form-control" id="" disabled>
+        <label for="" class="form-label">Id</label> //name
+        <input type="" class="form-control" id="" name="txtId" value="{{$checklistItem->id}}" disabled>
       </div>
 <div class="mb-3">
 <label for="" class="form-label">Type</label>
   <select id="" class="form-select">
-    <option value="{{$checklistItem->type}}">InCabinChecks</option>
-    <option value="{{$checklistItem->Type}}">DrivingInfoQuestions</option>
-    <option value="{{$checklistItem->type}}">ExternalChecks</option>
+    <option value="{{$checklistItem->type}}" name="txtType[]">InCabinChecks</option>
+    <option value="{{$checklistItem->Type}}" name="txtType[]">DrivingInfoQuestions</option>
+    <option value="{{$checklistItem->type}}" name="txtType[]">ExternalChecks</option>
   </select>
 </div>
 <div class="mb-3">
 <label for="" class="form-label">Key</label>
-<input type="" class="form-control" id="" value="{{$checklistItem->key}}">
+<input type="text" class="form-control" id="" value="{{$checklistItem->key}}" name="txtKey">
 </div>
 <div class="mb-3">
 <label for="" class="form-label">Value</label>
-<input type="" class="form-control" id="" value="{{$checklistItem->value}}">
+<input type="text" class="form-control" id="" value="{{$checklistItem->value}}" name="txtValue">
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-  </body>
-</html>

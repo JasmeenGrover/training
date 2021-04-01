@@ -11,7 +11,7 @@ class ChecklistItemController extends Controller
 
     public function index()
     {
-        $checklistItems = ChecklistItems::paginate();
+        $checklistItems = ChecklistItems::paginate();//ChecklistItems is class
         return view("checklist-item.index",compact("checklistItems"));
     }
 
@@ -52,6 +52,7 @@ class ChecklistItemController extends Controller
 
     public function update(Request $request, ChecklistItems $checklistItem)
     {
+      return $request->all();
       $request -> validate([
         'type' => 'required',
         'key' => 'required',
@@ -59,8 +60,8 @@ class ChecklistItemController extends Controller
       ]);
 
       $checklistItem ->update($request->all());
-
-      return redirect()->route('checklist-item.index')->with('success','ChecklistItem updated successfully');
+      return $checklistItem;
+     return redirect()->route('checklist-item.index')->with('success','ChecklistItem updated successfully');
     }
 
     //delete

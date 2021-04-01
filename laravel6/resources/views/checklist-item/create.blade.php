@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+@extends('checklist-item.layout')
+
+@section('content')
     <form>
         <div class="mb-3">
           <label for="" class="form-label">Type</label>
@@ -24,5 +20,4 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-  </body>
-</html>
+@endsection

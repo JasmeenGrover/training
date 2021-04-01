@@ -62,25 +62,30 @@
   //     return view('contact');
   // });
 
-  Route::get('/', function () {
-      return view('welcometemplate');
-  });
-
-  Route::get('/about', function () {
-      return view('about');
-  });
-
   // Route::get('/', function () {
-  //     return view('checklist-item.index');
+  //     return view('welcometemplate');
+  // });
+  //
+  // Route::get('/about', function () {
+  //   // $article = App\Article::all();//returns all articles from database
+  //   $article = App\Article::latest()->get();
+  //   // $article = App\Article::take(2)->get();//returns 2 articles from database
+  //   // $article = App\Article::paginate(2);//returns articles in two pages
+  //   return $article;
+  //     return view('about');
   // });
 
-  // Route::get('checklist-item', "ChecklistItemController@index");
+  Route::get('/', function () {
+      return view('checklist-item.index');
+  });
 
-//   Route::get('/', function () {
-//       return view('checklist-item.edit');
-//   });
-//
-// Route::resource('checklist-item', 'ChecklistItemController');
+  Route::get('checklist-item', "ChecklistItemController@index");
+
+  Route::get('/', function () {
+      return view('checklist-item.edit');
+  });
+
+Route::resource('checklist-item', 'ChecklistItemController');
 // Route::get('checklist-item/{checklist-item}/edit', "ChecklistItemController@edit");
 
-// Route::put('checklist-item/{checklist-item}/edit', 'ChecklistItemController@update');
+Route::put('checklist-item/{checklist-item}/edit', 'ChecklistItemController@update');
