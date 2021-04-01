@@ -1,4 +1,6 @@
+@extends('checklist-item.layout')
 
+@section('content')
     <form action="{{ route('checklist-item.update', $checklistItem->id) }}" method="Post">
 
       @csrf
@@ -10,10 +12,10 @@
       </div>
 <div class="mb-3">
 <label for="" class="form-label">Type</label>
-  <select id="" class="form-select">
-    <option value="{{$checklistItem->type}}" name="txtType[]">InCabinChecks</option>
-    <option value="{{$checklistItem->Type}}" name="txtType[]">DrivingInfoQuestions</option>
-    <option value="{{$checklistItem->type}}" name="txtType[]">ExternalChecks</option>
+  <select id="" class="form-select" name="txtTech">
+    <option value="{{$checklistItem->type}}">InCabinChecks</option>
+    <option value="{{$checklistItem->Type}}">DrivingInfoQuestions</option>
+    <option value="{{$checklistItem->type}}">ExternalChecks</option>
   </select>
 </div>
 <div class="mb-3">
@@ -26,3 +28,5 @@
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+@endsection

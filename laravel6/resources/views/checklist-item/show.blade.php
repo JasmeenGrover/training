@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+@extends('checklist-item.layout')
+
+@section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -36,5 +32,4 @@
             </div>
         </div>
     </div>
-  </body>
-</html>
+@endsection
