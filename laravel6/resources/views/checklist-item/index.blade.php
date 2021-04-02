@@ -3,7 +3,7 @@
 @section('content')
     <a type="button" class="btn btn-primary" href="{{route("checklist-item.create")}}">Create Checklist Item</a>
 
-    <table class="table">
+    <table class="table table-light table-bordered rounded rounded-circle text-center">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -21,7 +21,7 @@
       <td>{{$item["key"]}}</td>
       <td>{{$item["value"]}}</td>
       <td>
-        
+
           <a type="button" class="btn btn-primary" href="{{route("checklist-item.edit",$item)}}">Edit</a>
 
           <form class="" action="{{ route("checklist-item.destroy",$item) }}" method="post">
@@ -34,4 +34,5 @@
     {{ $checklistItems->links() }}
   </tbody>
 </table>
+
 @endsection
