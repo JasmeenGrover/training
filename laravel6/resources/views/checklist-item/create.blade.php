@@ -32,7 +32,6 @@
         <button type="submit" class="btn btn-primary mb-2 mt-2">Submit</button>
       </form>
 
-
     </div>
 
 @endsection
