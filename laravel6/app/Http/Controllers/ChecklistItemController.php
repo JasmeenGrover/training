@@ -52,7 +52,7 @@ class ChecklistItemController extends Controller
 
     public function update(Request $request, ChecklistItems $checklistItem)
     {
-      return $request->all();
+      // return $request->all();
       $request -> validate([
         'type' => 'required',
         'key' => 'required',
