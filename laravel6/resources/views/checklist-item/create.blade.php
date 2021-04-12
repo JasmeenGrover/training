@@ -8,7 +8,6 @@
 
 <div class="border border-2 border-primary mr-2 ms-5 mt-2 mb-2 me-5 p-2 lh-lg shadow p-3 mb-5 bg-body rounded">
 
-
     <form action="{{ route('checklist-item.store')}}" method="post">
 
       @csrf
