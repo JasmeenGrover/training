@@ -15,7 +15,7 @@
 
         <div class="mb-3">
           <label for="" class="form-label">Type</label>
-          <select id="" class="form-select">
+          <select id="" class="form-select" name="type">
             <option name="txtType[]" value="InCabinChecks">InCabinChecks</option>
             <option name="txtType[]" value="DrivingInfoQuestions">DrivingInfoQuestions</option>
             <option name="txtType[]" value="ExternalChecks">ExternalChecks</option>
@@ -23,11 +23,11 @@
         </div>
         <div class="mb-3">
           <label for="" class="form-label">Key</label>
-          <input type="text" class="form-control" id="" name="txtKey">
+          <input type="text" class="form-control" id="" name="key">
         </div>
         <div class="mb-3">
           <label for="" class="form-label">Value</label>
-          <input type="text" class="form-control" id="" name="txtKey">
+          <input type="text" class="form-control" id="" name="value">
         </div>
         <button type="submit" class="btn btn-primary mb-2 mt-2">Submit</button>
       </form>

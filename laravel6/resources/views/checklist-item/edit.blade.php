@@ -19,7 +19,7 @@
       </div>
       <div class="mb-3">
         <label for="" class="form-label">Type</label>
-        <select id="" class="form-select" name="txtTech">
+        <select id="" class="form-select" name="type">
           <option value="{{$checklistItem->type}}">InCabinChecks</option>
           <option value="{{$checklistItem->Type}}">DrivingInfoQuestions</option>
           <option value="{{$checklistItem->type}}">ExternalChecks</option>
@@ -27,11 +27,11 @@
       </div>
       <div class="mb-3">
         <label for="" class="form-label">Key</label>
-        <input type="text" class="form-control" id="" value="{{$checklistItem->key}}" name="txtKey">
+        <input type="text" class="form-control" id="" value="{{$checklistItem->key}}" name="key">
       </div>
       <div class="mb-3">
         <label for="" class="form-label">Value</label>
-        <input type="text" class="form-control" id="" value="{{$checklistItem->value}}" name="txtValue">
+        <input type="text" class="form-control" id="" value="{{$checklistItem->value}}" name="value">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
 </form>

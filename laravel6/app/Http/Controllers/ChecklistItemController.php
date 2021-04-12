@@ -52,15 +52,17 @@ class ChecklistItemController extends Controller
 
     public function update(Request $request, ChecklistItems $checklistItem)
     {
+      // dd(123);
       // return $request->all();
-      $request -> validate([
+      $request->validate([
         'type' => 'required',
         'key' => 'required',
         'value' => 'required',
       ]);
+      // dd(123);
 
       $checklistItem ->update($request->all());
-      return $checklistItem;
+      // return $checklistItem;
      return redirect()->route('checklist-item.index')->with('success','ChecklistItem updated successfully');
     }
 
