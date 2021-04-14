@@ -1,0 +1,17 @@
+body{
+  /* background-color: blue;
+  color: white; */
+  max-width: 700px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+p{
+  line-height: 1.5;
+}
+
+article + article {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  border-top: 1px solid #c5c5c5;
+}

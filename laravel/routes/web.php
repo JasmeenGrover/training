@@ -17,10 +17,20 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 //
-Route::get('/hello', function () {
-    return view('welcome');
-});
+// Route::get('/hello', function () {
+//     return view('welcome');
+// });
+//
+// Route::get('/', function () {
+//     return ['god' => 'god'];
+// });
 
 Route::get('/', function () {
-    return ['god' => 'god'];
+    return view('code-vlog.post');
+});
+
+Route::get('posts', function () {
+    return view('code-vlog.posts', [
+      'posts' => '<h1>The Merchant of Venice</h1>'
+    ]);
 });
