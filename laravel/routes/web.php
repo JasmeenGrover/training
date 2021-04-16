@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,11 +27,36 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('code-vlog.post');
+    return view('code-vlog.posts');
 });
 
-Route::get('posts', function () {
-    return view('code-vlog.posts', [
-      'posts' => '<h1>The Merchant of Venice</h1>'
-    ]);
-});
+Route::get('posts/{post}', function ($slug) {
+  //Find a post by its slug and pass it to a view called "post"
+  $post = Post::find($slug);
+
+  return view('code-vlog.post',[
+    'post' => $post
+  ]);
+  //return $slug;
+  // $path = __DIR__ . "/../resources/posts/{$slug}.html";
+  //
+  // // ddd($path);
+  //
+  // if (! file_exists($path)) {
+  // // dd('file does not exist');
+  // // ddd('file does not exist');
+  // // abort(404);
+  // return redirect('/');
+  // }
+  //
+  // $post = cache()->remember("posts.{$slug}",1200,function() use($path){
+  //   var_dump('file_get_contents');
+  //   return file_get_contents($path);
+  // });
+  // // $post = file_get_contents($path);
+  //
+  //   return view('code-vlog.post', [
+  // // //     // 'post' => '<h1>The Merchant of Venice</h1>'
+  //     'post' => $post
+  //   ]);
+})->where('post','[A-z_\-]+');
