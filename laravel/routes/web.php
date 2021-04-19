@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Post;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 /*
